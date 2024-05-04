@@ -37,7 +37,7 @@ impl Application for YourApp {
 
     type Message = Message;
 
-    const APP_ID: &'static str = "com.example.YourApp";
+    const APP_ID: &'static str = "land.burke.hello";
 
     fn core(&self) -> &Core {
         &self.core
@@ -67,7 +67,7 @@ impl Application for YourApp {
     ///
     /// To get a better sense of which widgets are available, check out the `widget` module.
     fn view(&self) -> Element<Self::Message> {
-        widget::container(widget::text::title1("Welcome to COSMIC! ✨"))
+        widget::container(widget::text::title1("Hello, COSMIC!"))
             .width(Length::Fill)
             .height(Length::Fill)
             .align_x(Horizontal::Center)
